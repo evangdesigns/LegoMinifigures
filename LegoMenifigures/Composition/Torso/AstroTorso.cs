@@ -4,14 +4,12 @@ using System.Text;
 
 namespace LegoMinifigures.Composition.Torso
 {
-    class AstroTorso
+    class AstroTorso : TorsoBase
     {
         public int NumberOfArms { get; set; }
-        public bool ChiseledAbs { get; set; }
-        public bool Shirted { get; set; }
-        public HandType HandType { get; set; }
+        public override bool ChiseledAbs { get; set; }
 
-        public void Flex()
+        public override void Flex()
         {
             if (ChiseledAbs && !Shirted)
             {
@@ -26,15 +24,9 @@ namespace LegoMinifigures.Composition.Torso
                 Console.WriteLine("Weird Flex, but Ok.");
             }
         }
-    }
-
-    enum HandType
-    {
-        Human,
-        Robot,
-        Baby,
-        Tentacles,
-        CanadaArm,
-        XBuster
+        public override void Breathe()
+        {
+            Console.WriteLine("Inhale, Exhale...");
+        }
     }
 }

@@ -56,6 +56,5 @@ namespace LegoMinifigures
             Legs.Walk(10);
 
         }
-
     }
 }
