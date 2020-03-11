@@ -52,6 +52,7 @@ namespace LegoMinifigures
             fatso.Haunt("Whipstaff Manor");
             fatso.Spook();
 
+            Console.ReadKey();
         }
     }
 }
